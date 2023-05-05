@@ -1,0 +1,11 @@
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-item:center;
+  height: 200px;
+  background-color: #161517;
+  color: white;
+  font-Size:40px;
+  padding-top:10px;
+  /* font-family: gilroy-bold; */
+}

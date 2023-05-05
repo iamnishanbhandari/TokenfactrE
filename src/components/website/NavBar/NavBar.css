@@ -1,0 +1,41 @@
+navbar-appbar{
+    background-color: rgba(249, 250, 251, 0.733);
+    backdrop-filter: blur(10px);
+    color:"black";
+}
+
+.navbar-container {
+    border: 1px solid red;
+    height: 600px;
+    background-color: grey;
+    margin-top: 6px;
+    border-radius: 15px;
+  }
+  
+  .navbar-box {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .navbar-title {
+    margin-left: 5px;
+  }
+  
+  .navbar-partner {
+    border: 1px solid;
+    border-radius: 20px;
+    margin-right: 15px;
+  }
+  
+  .navbar-partner-text {
+    padding: 10px;
+  }
+  
+  .navbar-solutions,
+  .navbar-docs {
+    padding: 10px;
+  }
+  
