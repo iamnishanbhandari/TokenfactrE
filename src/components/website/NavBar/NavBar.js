@@ -37,9 +37,8 @@
 // }
 // export default NavBar;
 
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import '../../../assets/transparent_background.png'
 
 const NavBar = () => {
@@ -76,11 +75,11 @@ const NavBar = () => {
             <Box>
               <Typography >Docs</Typography>
             </Box>
-            <Box>
+            {/* <Box>
               <Typography sx={{ border: "1px solid", borderRadius: "20px" }}>
                 <Button>Join Us As Partner </Button>
               </Typography>
-            </Box>
+            </Box> */}
           </Box>
         </Box>
       </Box>

@@ -8,25 +8,21 @@ import Dashboard from "./components/website/Dashboard";
 const App = () => {
   return (
 
-    // <>
-    //   <Router>
-    //     <Routes>
-    //       <Route path="/" element={<Main />} />
-    //       <Route path="/Ecommerce" element={<Ecommerce />} />
-    //       <Route path="/Register" element={<Register />} />
+     <>
+       <Router>
+         <Routes>
+           <Route path="/" element={<Main />} />
+           <Route path="/Ecommerce" element={<Ecommerce />} />
+           <Route path="/Register" element={<Register />} />
+           
 
 
-    //       {/* <Dashboard/> */}
-    //       {/* <Register/> */}
-    //     </Routes>
-    //   </Router>
-    // </>
-    <>
+           {/* <Dashboard/> */}
+           {/* <Register/> */}
+         </Routes>
+       </Router>
+     </>
 
-    {/* <Register/> */}
-
-    <Dashboard/>
-    </>
   );
 };
 

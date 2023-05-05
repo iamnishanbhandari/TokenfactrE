@@ -9,7 +9,7 @@ import {
   import React, { useState } from "react";
   import { TextField, Box, Stack } from "@mui/material";
   import { Button } from "@mui/material";
-  import { Link,useHistory } from "react-router-dom";
+  import { Link, useNavigate } from "react-router-dom";
   import { useSnackbar } from "notistack";
   
   import "./Register.css";
@@ -18,7 +18,7 @@ import {
   const Register = () => {
     const [quantity, setQuantity] = useState("");
     const { enqueueSnackbar } = useSnackbar(); 
-    const history = useHistory(); 
+    const navigate = useNavigate(); 
   
     const handleQuantityChange = (e) => {
       setQuantity(quantity.target.value);
@@ -27,7 +27,7 @@ import {
     const handleCreateAccount = () => {
       enqueueSnackbar("Success! Account Created", { variant: "success" });
       setTimeout(() => {
-        history.push("/Ecommerce"); 
+        navigate.push("/Ecommerce"); 
       }, 4000);
     };
   
@@ -69,9 +69,7 @@ import {
                   type="text"
                   variant="outlined"
                   // color="secondary"
-                  label="fuck"
-                  // onChange={e => setLastName(e.target.value)}
-                  // value={lastName}
+                  label="Lastname"
                   fullWidth
                   required
                 />
@@ -81,8 +79,6 @@ import {
                 variant="outlined"
                 color="secondary"
                 label="Email"
-                // onChange={e => setEmail(e.target.value)}
-                // value={email}
                 fullWidth
                 required
                 sx={{ mb: 3, color: "black", bgcolor: "white" }}
@@ -93,8 +89,7 @@ import {
                 variant="outlined"
                 color="secondary"
                 label="Password"
-                // onChange={e => setPassword(e.target.value)}
-                // value={password}
+             
                 required
                 fullWidth
                 sx={{ mb: 3, color: "black", bgcolor: "white" }}
@@ -105,8 +100,7 @@ import {
                 variant="outlined"
                 color="secondary"
                 label="Business Name"
-                // onChange={e => setPassword(e.target.value)}
-                // value={password}
+             
                 required
                 fullWidth
                 sx={{ mb: 3, color: "black", bgcolor: "white" }}
@@ -117,8 +111,7 @@ import {
                 variant="outlined"
                 color="secondary"
                 label="TOken Name"
-                // onChange={e => setPassword(e.target.value)}
-                // value={password}
+             
                 required
                 fullWidth
                 sx={{ mb: 3, color: "black", bgcolor: "white" }}
