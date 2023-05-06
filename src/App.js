@@ -11,8 +11,11 @@ import React from "react";
 import Sidebar from "./components/AdminComponent/Sidebar";
 import MainDash from "./components/AdminComponent/MainDash/MainDash";
 import RightSide from "./components/AdminComponent/RigtSide/RightSide";
+import { Box, Container } from "@mui/material";
+import './App.css'
 // import Adminnavbar from "./components/Admin/AdminNavbar/Adminnavbar";
-import Adminmain from "./components/Admin/AdminMain/Adminmain";
+// import Adminmain from "./components/Admin/AdminMain/Adminmain";
+
 
 const App = () => {
   return (
@@ -36,11 +39,14 @@ const App = () => {
     {/* <AdminNavBar/> */}
     {/* <AdminDashboard/> */}
 
-    <div className="AppGlass">
+    <Box className="AppGlass" >
+      {/* <Container>  */}
+
         <Sidebar/>
         <MainDash/>
         <RightSide/>
-      </div>
+      {/* </Container> */}
+      </Box>
 {/* <Adminmain/> */}
     </>
     

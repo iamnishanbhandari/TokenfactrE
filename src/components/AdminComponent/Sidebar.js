@@ -28,7 +28,8 @@ const Sidebar = () => {
       >
         <UilBars />
       </div>
-      <div className="menu" style={{ display: "flex", flexDirection: "row" }}>
+      <div className="menu" style={{ display: "flex", flexDirection: "row",margin:"5px",marginRight:"-50px" }}>
+
         {SidebarData.map((item, index) => {
           return (
             <div
@@ -39,7 +40,7 @@ const Sidebar = () => {
               onClick={() => setSelected(index)}
             >
               <item.icon />
-              <span>{item.heading}</span>
+              <span style={{fontSize:"25px"}}>{item.heading}</span>
             </div>
           );
         })}
