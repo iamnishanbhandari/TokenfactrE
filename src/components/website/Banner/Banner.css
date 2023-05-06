@@ -1,0 +1,14 @@
+.banner_box{
+    height:50px;
+    width:100%;
+    background-color: purple;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+.banner_box p{
+    color:white;
+    font-size: 17px;
+    
+}
