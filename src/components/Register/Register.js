@@ -27,9 +27,11 @@ import {
     const handleCreateAccount = () => {
       enqueueSnackbar("Success! Account Created", { variant: "success" });
       setTimeout(() => {
-        navigate.push("/Ecommerce"); 
+        navigate("/Ecommerce"); 
       }, 4000);
     };
+    
+    
   
     return (
       <>
