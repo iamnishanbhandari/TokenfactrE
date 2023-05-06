@@ -9,27 +9,35 @@ import {
   import React, { useState } from "react";
   import { TextField, Box, Stack } from "@mui/material";
   import { Button } from "@mui/material";
-  import { Link, useNavigate } from "react-router-dom";
-  import { useSnackbar } from "notistack";
+  import './Register.css'
+  // import { Link, useNavigate } from "react-router-dom";
+  // import { useSnackbar } from "notistack";
   
   import "./Register.css";
   
   
   const Register = () => {
     const [quantity, setQuantity] = useState("");
-    const { enqueueSnackbar } = useSnackbar(); 
-    const navigate = useNavigate(); 
+    const [image, setImage] = useState(null);
+
+    // const { enqueueSnackbar } = useSnackbar(); 
+    // const navigate = useNavigate(); 
   
     const handleQuantityChange = (e) => {
       setQuantity(quantity.target.value);
     };
-  
-    const handleCreateAccount = () => {
-      enqueueSnackbar("Success! Account Created", { variant: "success" });
-      setTimeout(() => {
-        navigate("/Ecommerce"); 
-      }, 4000);
+
+    const handleImageChange = (e) => {
+      const file = e.target.files[0];
+      setImage(file);
     };
+  
+    // const handleCreateAccount = () => {
+    //   enqueueSnackbar("Success! Account Created", { variant: "success" });
+    //   setTimeout(() => {
+    //     navigate("/Ecommerce"); 
+    //   }, 4000);
+    // };
     
     
   
@@ -136,6 +144,11 @@ import {
                   />
                 </RadioGroup>
               </Box>
+              <Box sx={{ mb: 3 }}>
+              <Typography>Upload Image:</Typography>
+              <input type="file" onChange={handleImageChange} />
+            </Box>
+
               <Box
                 sx={{
                   display: "flex",
@@ -143,7 +156,7 @@ import {
                   justifyContent: "center",
                 }}
               >
-                <Link to="/Ecommerce">
+                {/* <Link to="/Ecommerce"> */}
                   <Button
                     sx={{
                       width: "200px",
@@ -154,11 +167,11 @@ import {
                       boxShadow: " 0px 0px 100px #000000",
                       borderRadius: "88px",
                     }}
-                    onClick={handleCreateAccount}
+                    // onClick={handleCreateAccount}
                   >
                     Create
                   </Button>
-                </Link>
+                {/* </Link> */}
               </Box>
               <Box sx={{ textAlign: "center", mt: "30px" }}>
                 <Typography>TERMS OF USE</Typography>
