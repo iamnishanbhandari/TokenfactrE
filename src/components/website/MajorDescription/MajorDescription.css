@@ -1,0 +1,29 @@
+.major-description1 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  outline: 1px solid red;
+  text-align: end;
+  color: white;
+}
+
+.major-description2 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  color: white;
+}
+
+.major-description3 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: end;
+  color: white;
+}

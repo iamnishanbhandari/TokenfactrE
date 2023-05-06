@@ -1,0 +1,23 @@
+.timetojoin-box {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .join {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .button {
+    background: linear-gradient(90deg, #7CF4B6 4.68%, #00FFE0 95.08%);
+    border: 2px solid #496F69;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 88px;
+    color: white;
+  }
+  
