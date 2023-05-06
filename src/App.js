@@ -8,9 +8,9 @@ import React from "react";
 // import AdminNavBar from "./components/AdminDashboard/AdminNavBar";
 // import AdminDashboard from "./components/AdminDashboard/AdminDashboard";
 // import AdminSidebar from "./components/AdminDashboard/Sidebar/AdminSidebar";
-// import Sidebar from "./components/AdminComponent/Sidebar";
-// import MainDash from "./components/AdminComponent/MainDash/MainDash";
-// import RightSide from "./components/AdminComponent/RigtSide/RightSide";
+import Sidebar from "./components/AdminComponent/Sidebar";
+import MainDash from "./components/AdminComponent/MainDash/MainDash";
+import RightSide from "./components/AdminComponent/RigtSide/RightSide";
 // import Adminnavbar from "./components/Admin/AdminNavbar/Adminnavbar";
 import Adminmain from "./components/Admin/AdminMain/Adminmain";
 
@@ -36,12 +36,12 @@ const App = () => {
     {/* <AdminNavBar/> */}
     {/* <AdminDashboard/> */}
 
-    {/* <div className="AppGlass">
+    <div className="AppGlass">
         <Sidebar/>
         <MainDash/>
         <RightSide/>
-      </div> */}
-<Adminmain/>
+      </div>
+{/* <Adminmain/> */}
     </>
     
 
