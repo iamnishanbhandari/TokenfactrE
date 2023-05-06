@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
-// import logo from "./imgs/logo.png"
 import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "./Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
@@ -9,39 +8,33 @@ import { motion } from "framer-motion";
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
 
-  const [expanded, setExpaned] = useState(true)
+  const [expanded, setExpaned] = useState(true);
 
   const sidebarVariants = {
     true: {
-      left : '0'
+      left: "0",
     },
-    false:{
-      left : '-60%'
-    }
-  }
-  console.log(window.innerWidth)
+    false: {
+      left: "-60%",
+    },
+  };
+
   return (
     <>
-      <div className="bars" style={expanded?{left: '60%'}:{left: '5%'}} onClick={()=>setExpaned(!expanded)}>
+      <div
+        className="bars"
+        style={expanded ? { left: "60%" } : { left: "5%" }}
+        onClick={() => setExpaned(!expanded)}
+      >
         <UilBars />
       </div>
-    {/* <motion.div className='sidebar'
-    variants={sidebarVariants}
-    animate={window.innerWidth<=768?`${expanded}`:''}
-    > */}
-      {/* logo */}
-      {/* <div className="logo">
-        <img src={logo} alt="logo" />
-        <span>
-          Sh<span>o</span>ps
-        </span>
-      </div> */}
-
-      <div className="menu">
+      <div className="menu" style={{ display: "flex", flexDirection: "row" }}>
         {SidebarData.map((item, index) => {
           return (
             <div
-              className={selected === index ? "menuItem active" : "menuItem"}
+              className={
+                selected === index ? "menuItem active" : "menuItem"
+              }
               key={index}
               onClick={() => setSelected(index)}
             >
@@ -50,12 +43,10 @@ const Sidebar = () => {
             </div>
           );
         })}
-        {/* signoutIcon */}
         <div className="menuItem">
           <UilSignOutAlt />
         </div>
       </div>
-    {/* </motion.div> */}
     </>
   );
 };

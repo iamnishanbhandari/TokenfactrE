@@ -7,9 +7,7 @@ import {
     UilChart,
     UilSignOutAlt,
   } from "@iconscout/react-unicons";
-  
-  // Analytics Cards imports
-  import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
+    import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
   import { keyboard } from "@testing-library/user-event/dist/keyboard";
   
   // Recent Card Imports
@@ -94,7 +92,7 @@ import {
     },
   ];
   
-  // Recent Update Card Data
+  //  Update Card Data
   export const UpdatesData = [
     {
       img: img1,
