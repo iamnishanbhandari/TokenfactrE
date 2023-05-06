@@ -1,0 +1,21 @@
+.text-field {
+    border-color: whitesmoke;
+    color: red;
+}
+
+
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+.MuiInputLabel-root.Mui-focused {
+  color: white;
+}

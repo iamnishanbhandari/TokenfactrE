@@ -1,0 +1,52 @@
+ 
+  .community-status-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .community-status-text1 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  .community-status-text2 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(
+      97.39deg,
+      #40ffa3 -6.2%,
+      #57f6b3 26.55%,
+      #a8f379 92.05%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  
+  .community-status-text3 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(
+      97.39deg,
+      #40ffa3 -6.2%,
+      #57f6b3 26.55%,
+      #a8f379 92.05%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  
+  .community-status-made-for {
+    position: relative;
+    left: 250px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: bold;
+  }
+  
