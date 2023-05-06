@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import "./Timetojoin.css";
-
+import { Link } from "react-router-dom";
 const Timetojoin = () => {
   return (
     <Box className="timetojoin-box">
@@ -13,7 +13,9 @@ const Timetojoin = () => {
         </Typography>
       </Box>
       <Box>
+        <Link to="/Register"> 
         <Button className="button">Start Building</Button>
+        </Link>
       </Box>
     </Box>
   );

@@ -1,45 +1,8 @@
-// import * as React from "react";
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
-// import IconButton from "@mui/material/IconButton";
-// import Typography from "@mui/material/Typography";
-// import Menu from "@mui/material/Menu";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import Container from "@mui/material/Container";
-// import './NavBar.css'
-
-// function NavBar() {
-//   return (
-//     <AppBar position="static" className="navbar-appbar" sx={{border:"1px solid red",color:"red"}}>
-//       <Container maxWidth="xl">
-//         <Toolbar disableGutters>
-//           <Box>
-//             <Box className>Logo</Box>
-//             <Box>
-//               <Box>
-//                 <Box>
-//                   <Typography>Solutions</Typography>
-//                 </Box>
-//                 <Box>
-//                   <Typography>Docs</Typography>
-//                 </Box>
-//                 <Box>
-//                   <Typography>Join us as Partner</Typography>
-//                 </Box>
-//               </Box>
-//             </Box>
-//           </Box>
-//         </Toolbar>
-//       </Container>
-//     </AppBar>
-//   );
-// }
-// export default NavBar;
-
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import '../../../assets/transparent_background.png'
+// import '../../../assets/transparent_background.png'
+
+import transparelogo from '../../../assets/transparelogo.png'
 
 const NavBar = () => {
   return (
@@ -56,7 +19,7 @@ const NavBar = () => {
         >
           <Box ml={5}>
             <Typography variant="h5"> 
-            <img src="transparent_background.png" alt="LOGO"></img>
+            <img src={transparelogo} alt="LOGO"></img>
             </Typography>
           </Box>
           <Box
