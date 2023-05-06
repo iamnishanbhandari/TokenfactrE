@@ -1,12 +1,27 @@
+:root {
+  --text-color: #DDA74F;
+  --white: #ffffff;
+  --text-secondary-color:#dda74f;
+
+}
+
 .header-content1 {
   font-family: sora;
-  font-size: 150px;
+  font-size: 53px !important;
   font-weight: bold;
   color: white;
-  line-height: 150px;
+  line-height: 65px !important;
+  letter-spacing: 0.25px !important;
   text-align: center;
-  white-space: pre-line;
-  margin-top: 100px;
+  /* white-space: pre-line; */
+  margin-top: 143px;
+  
+}
+
+.header-content1 span{
+  font-size: 87px;
+  color:var(--text-secondary-color);
+  letter-spacing: 0.2px !important;
 }
 
 @media screen and (max-width: 1630px) {
@@ -14,7 +29,7 @@
     font-size: 106px;
     line-height: 125px;
     letter-spacing: -3px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 }
 
@@ -47,14 +62,16 @@
   font-weight: bold;
   color: white;
   /* line-height: 150px; */
+
   text-align: center;
   white-space: pre-line;
   margin-top: 80px;
+  margin-bottom: 35px;
 }
 
 Button{
   background: linear-gradient(90deg, #7CF4B6 4.68%, #00FFE0 95.08%);
-border: 2px solid #496F69;
+/* border: 2px solid #496F69; */
 box-shadow: 0px 0px 100px #000000;
 border-radius: 88px;
 height:"50px"
@@ -62,32 +79,40 @@ height:"50px"
 
 
 .header-box {
-  border: 1px solid;
-  height: 800px;
+  /* border: 1px solid; */
+  /* height: 800px; */
   background-color: #0F0F0F;
+  width:100%;
+  /* margin-bottom: 5px; */
+  /* padding: 20px; */
+  margin-top:10px;
 }
 
-.header-container {
-  border: 1px solid red;
-  height: 800px;
-}
+
 
 
 .header-button {
-  border: 1px solid red;
-  height: fit-content;
+  /* border: 1px solid red; */
+  /* height: fit-content; */
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  margin-top:69px;
 }
+
+
 
 .header-button-text {
-  height: 80px;
-  font-size: 30px;
-  border-radius: 40px;
-  padding-top: 5px;
+  background: linear-gradient(90deg, #7CF4B6 4.68%, #00FFE0 95.08%);
+  /* border: 2px solid #496F69; */
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 60px !important;
+  padding:12px 29px !important;
+  color: black !important;
+  font-size: 18px  !important;
+  font-weight: bold;
+  margin-bottom: 40px !important;
 }
-
 
 
 
