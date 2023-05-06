@@ -1,4 +1,6 @@
 import React from "react";
+
+
 // import Register from "./components/Register/Register";
 // import Main from "./components/website/Dashboard";
 // import Ecommerce from "./components/Ecommerce/Ecommerce";
@@ -14,8 +16,11 @@ import RightSide from "./components/AdminComponent/RigtSide/RightSide";
 // import Adminnavbar from "./components/Admin/AdminNavbar/Adminnavbar";
 import Adminmain from "./components/Admin/AdminMain/Adminmain";
 
+
 const App = () => {
   return (
+
+
 
     //  <>
     //    <Router>
@@ -23,6 +28,7 @@ const App = () => {
     //        <Route path="/" element={<Main />} />
     //        <Route path="/Ecommerce" element={<Ecommerce />} />
     //        <Route path="/Register" element={<Register />} />
+
            
 
 

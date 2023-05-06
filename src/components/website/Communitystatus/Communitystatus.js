@@ -10,19 +10,19 @@ const CommunityStatus = () => {
           className="community-status-content"
         >
           <Box>
-            <Typography className="community-status-text1">
+            <Typography className="community-status-text1"  >
               Join The Community Of Millions
             </Typography>
           </Box>
 
           <Box>
-            <Typography className="community-status-text2">
+            <Typography className="community-status-text2"  fontSize={22}>
               11.5M+ <br />
               ACTIVE ACCOUNTS
             </Typography>
-            <Typography className="community-status-text3" mt={2}>
+            <Typography className="community-status-text3" mt={1} fontSize={22}>
               $0.00025 <br />
-              AVERAGE COST <br /> PER TOkFactrE
+              AVERAGE COST <br /> PER Token
             </Typography>
           </Box>
         </Box>

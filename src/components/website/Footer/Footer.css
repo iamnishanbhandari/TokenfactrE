@@ -1,11 +1,47 @@
+:root {
+  --text-color: #DDA74F;
+  --white: #ffffff;
+
+}
+
+
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  align-item:center;
-  height: 200px;
+  justify-self:first baseline;
+  align-items:center;
+  height: 350px;
   background-color: #161517;
-  color: white;
-  font-Size:40px;
-  padding-top:10px;
+  color: var(--text-color);
+  
+  /* font-Size:40px; */
+  /* margin:auto; */
+  /* padding-top:10px; */
+  
+  
   /* font-family: gilroy-bold; */
+
+}
+
+.footer-right{
+padding-top:6px;
+
+
+}
+
+.footer-middle{
+padding-top:83px;
+}
+.footer-left{
+  padding-top: 2px;
+}
+
+.footer-middle ul li{
+    line-height: 2.1;
+    list-style: none;
+}
+
+.footer-right ul li{
+  list-style: none;
+  line-height: 2.1;
 }
